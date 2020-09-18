@@ -288,10 +288,8 @@ class CPU:
 
             count = self.increment_count(op)   
             if inst_sets_pc != 0b00010000:
-            # if op == CALL or op == RET:
-            #     pass
-            # else:
                 self.pc += count
+                
             # print("PC", self.pc)
             # print("Regs", self.reg)
 
